@@ -1,24 +1,14 @@
 // src/components/MainContent.jsx
-const MainContent = () => {
+function MainContent() {
   return (
-   
-    
-    <div
-      style={{
-        border: "1px solid gray",
-        padding: "15px",
-        margin: "10px",
-        backgroundColor: "pink",
-        borderRadius: "8px",
-        textAlign: "center"
-      }}
-    >
-      <h2 style={{ color: "red", marginBottom: "8px" }}>Main Content</h2>
-      <p style={{ fontSize: "16px", lineHeight: "1.5" }}></p>
-      <p>I love to visit New York, Paris, and Tokyo.</p>
-    </div>
+    <main style={{ padding: '20px', backgroundColor: '#f0f8ff', textAlign: 'center' }}>
+      <h2 style={{ color: 'darkgreen', marginBottom: '15px' }}>Main Content</h2>
+      <p style={{ fontSize: '16px', color: '#333' }}>
+         <p>I love to visit New York, Paris, and Tokyo.</p>
+      </p>
+    </main>
   );
-};
+}
 
 export default MainContent;
 

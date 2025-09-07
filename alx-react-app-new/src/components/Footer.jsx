@@ -15,7 +15,7 @@ const Footer = () => {
     >
       
       <p style={{ fontSize: "14px" }}>
-        &copy; 2025 My React App. All rights reserved.
+        <p>© 2023 City Lovers</p>
       </p>
     </footer>
   );
