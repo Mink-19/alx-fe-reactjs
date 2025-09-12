@@ -1,7 +1,7 @@
-// src/App.jsx
 import React from 'react'
-import RecipeList from './components/RecipeList'
 import AddRecipeForm from './components/AddRecipeForm'
+import RecipeList from './components/RecipeList'
+import SearchBar from './components/SearchBar'
 
 export default function App() {
   return (
@@ -14,9 +14,14 @@ export default function App() {
       }}
     >
       <h1 style={{ textAlign: 'center' }}>Recipe Sharing App</h1>
-      {/* Form to add a recipe */}
+
+      
+      <SearchBar />
+
+      
       <AddRecipeForm />
-      {/* List of recipes */}
+
+    
       <RecipeList />
     </div>
   )
