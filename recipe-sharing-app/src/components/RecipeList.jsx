@@ -1,21 +1,18 @@
-import React from 'react'
+
 import { useRecipeStore } from './recipeStore'
 
 export default function RecipeList() {
   const recipes = useRecipeStore((state) => state.recipes)
   const filteredRecipes = useRecipeStore((state) => state.filteredRecipes)
+  const searchTerm = useRecipeStore((state) => state.searchTerm)
 
-  // Decide which list to display
-  const displayRecipes =
-    filteredRecipes && filteredRecipes.length > 0
-      ? filteredRecipes
-      : recipes
+  const displayRecipes = filteredRecipes.length ? filteredRecipes: recipes
 
   return (
     <div>
-      {displayRecipes.map((recipe) => (
+      {displayRecipes.map((r) => (
         <div
-          key={recipe.id}
+          key={r.id}
           style={{
             border: '1px solid #ddd',
             padding: '12px',
@@ -23,8 +20,8 @@ export default function RecipeList() {
             borderRadius: '6px',
           }}
         >
-          <h3>{recipe.title}</h3>
-          <p>{recipe.description}</p>
+          <h3>{r.title}</h3>
+          <p>{r.description}</p>
         </div>
       ))}
     </div>
