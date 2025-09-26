@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import Placeholder from "./components/Placeholder";
 
 export default function App() {
   return (
@@ -10,9 +11,9 @@ export default function App() {
 
       <main>
         {/* Search input and results will go here */}
-        {/* Example placeholders: */}
         <section id="search-bar">
           {/* <SearchBar /> */}
+          <Placeholder />
         </section>
 
         <section id="results">
