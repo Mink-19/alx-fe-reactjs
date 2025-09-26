@@ -1,5 +1,5 @@
 import './App.css';
-import Placeholder from "./components/Placeholder";
+import Search from './components/Search';
 
 export default function App() {
   return (
@@ -10,14 +10,12 @@ export default function App() {
       </header>
 
       <main>
-        {/* Search input and results will go here */}
         <section id="search-bar">
-          {/* <SearchBar /> */}
-          <Placeholder />
+          <Search />
         </section>
 
         <section id="results">
-          {/* <UserResults /> */}
+          {/* If Search handles results internally, you may not need extra code here */}
         </section>
       </main>
 
